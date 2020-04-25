@@ -1,6 +1,8 @@
-# This team hasn't started yet...
+# This is task 3
 
-Check back later!
+### Introduction
 
-**Please read `tasks.md` to start your work.**
- 
+### Code
+
+### Programming Language that I have learnt
+
