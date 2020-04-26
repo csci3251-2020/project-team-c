@@ -1,6 +1,11 @@
-# This team hasn't started yet...
+# CSCI 3251 PROJECT MILESTONE 3
 
-Check back later!
+### Introduction
 
-**Please read `tasks.md` to start your work.**
+
+### Code
+
+
+### Contributors
+
  
