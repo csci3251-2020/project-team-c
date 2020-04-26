@@ -35,5 +35,9 @@ Clicking our team's page here `https://csci3250-2019.github.io/(repo name)`. Edi
 
 ### Contributors  
 
-
+{% for contributor in site.stu %}
+  <img src="{{ contributor.image }}" />
+  {{ contributor.user }} {{ contributor.name }}<br>
+  {{ contributor.content | markdownify }}<br>
+{% endfor %}
  
