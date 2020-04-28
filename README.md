@@ -11,7 +11,7 @@ Setting up automation. Organization owners and members can configure workflows o
 Setting up 3 headings: **Introduction**, **Code** and **Contributors** and write a short summary that my team will do according to the taks.
 
 - **Task 4 (Show your team to the internet)**  
-Updating this web page: `https://csci3251-2020.github.io/_(repo name)_`. Go to **`readme.md`** and use a loop in the folder `_stu` to go through all files under **Contributors**. You should show image, user, name and content. For the details, you can go to `issues`.
+Updating this web page: `https://csci3251-2020.github.io/project-team-c/`. Go to **`readme.md`** and use a loop in the folder `_stu` to go through all files under **Contributors**. You should show image, user, name and content. For the details, you can go to `issues`.
 
 - **Task 5 (Keep checking)**  
 Very simple task. Just keep checking as a leader. Keep the community going.
@@ -20,10 +20,10 @@ Very simple task. Just keep checking as a leader. Keep the community going.
  In **`code.c`**, write a piece of very simple C code whatever you like. 
 
 - **Task 7 (Get a status badge)**  
-Updating this web page: `https://csci3251-2020.github.io/_(repo name)_`. Edit **`readme.md`**, and include the code from `code.c`. You can find the code in Task 6. And also you should insert the resultant image by using markdown under the code. For the details,  you can go to `issues`.
+Updating this web page: `https://csci3251-2020.github.io/project-team-c/`. Edit **`readme.md`**, and include the code from `code.c`. You can find the code in Task 6. And also you should insert the resultant image by using markdown under the code. For the details,  you can go to `issues`.
 
 - **Task 8 (Promote our repo)**  
-Clicking our team's page here `https://csci3250-2019.github.io/(repo name)`. Edit and include the repo last updated time using `site.time` under the web page. Going to the public repo of **`csci3251-2020.github.io`** and edit the file, add a link of our team. Finally, send a request for review from @chuckjee.
+Clicking our team's page here `https://csci3251-2020.github.io/project-team-c/`. Edit and include the repo last updated time using `site.time` under the web page. Going to the public repo of **`csci3251-2020.github.io`** and edit the file, add a link of our team. Finally, send a request for review from @chuckjee.
 
 **That's all about the project!!!**  
 
@@ -35,5 +35,9 @@ Clicking our team's page here `https://csci3250-2019.github.io/(repo name)`. Edi
 
 ### Contributors  
 
-
+{% for contributor in site.stu %}
+  <img src="{{ contributor.image }}" />
+  {{ contributor.user }} {{ contributor.name }}<br>
+  {{ contributor.content | markdownify }}<br>
+{% endfor %}
  
