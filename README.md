@@ -35,9 +35,17 @@ Clicking our team's page here `https://csci3251-2020.github.io/project-team-c/`.
 
 ### Contributors  
 
-{% for contributor in site.stu %}
-  <img src="{{ contributor.image }}" />
-  {{ contributor.user }} {{ contributor.name }}<br>
-  {{ contributor.content | markdownify }}<br>
-{% endfor %}
+<table>
+  <tbody>
+    {% for contributor in site.stu %}
+      <tr>
+        <td><img src="{{ contributor.image }}" width="50" height="50" /></td>
+        <td>
+          <a href="https://github.com/{{ contributor.user }}">@{{ contributor.user }}</a> ({{ contributor.name }})<br>
+          {{ contributor.content | markdownify }}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
  
