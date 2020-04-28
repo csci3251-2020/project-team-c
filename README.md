@@ -39,7 +39,7 @@ Clicking our team's page here `https://csci3250-2019.github.io/(repo name)`. Edi
   <tbody>
     {% for contributor in site.stu %}
       <tr>
-        <td><img src="{{ contributor.image }}" /></td>
+        <td><img src="{{ contributor.image }}" width="50" height="50" /></td>
         <td>
           <a href="https://github.com/{{ contributor.user }}">@{{ contributor.user }}</a> ({{ contributor.name }})<br>
           {{ contributor.content | markdownify }}
