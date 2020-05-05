@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - name: compile
-      run: gcc code.c -o code
+      run: gcc ../../code.c -o code
     - name: run
       run: ./code
