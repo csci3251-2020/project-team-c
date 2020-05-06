@@ -31,7 +31,7 @@ Clicking our team's page here `https://csci3251-2020.github.io/project-team-c/`.
 
 ### Code  
 ```c
-{% include_relative somedir/footer.html %}
+{% include_relative code.c %}
 ```
 
 ### Contributors  
