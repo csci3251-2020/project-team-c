@@ -33,6 +33,7 @@ Clicking our team's page here `https://csci3251-2020.github.io/project-team-c/`.
 ```c
 {% include_relative code.c %}
 ```
+![](https://github.com/csci3251-2020/project-team-c/workflows/Project-Team-C/badge.svg)
 
 ### Contributors  
 
