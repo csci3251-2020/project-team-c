@@ -51,3 +51,4 @@ Clicking our team's page here `https://csci3251-2020.github.io/project-team-c/`.
   </tbody>
 </table>
  
+Last updated: {{ site.time }}
