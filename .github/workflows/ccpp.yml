@@ -1,0 +1,19 @@
+name: Project-Team-C
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: compile
+      run: gcc code.c -o code
+    - name: run
+      run: ./code
